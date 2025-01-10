@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Magnetic } from './components/magnetic';
 
-import './App.scss'
+import './styles/App.scss'
 
 const App: React.FC = () => {
     return <div className='w-full h-screen flex justify-center items-center bg-white'>
+        <h1 className="text-4xl">Hi this is font test asdfn</h1>
         <Magnetic>
         <button
             type='button'

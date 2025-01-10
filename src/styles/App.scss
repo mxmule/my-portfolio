@@ -1,0 +1,15 @@
+@import './variables';
+
+// Apply global styles
+body {
+  font-family: $primary-font;
+  color: $text-color;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+a {
+  color: $secondary-color;
+}
