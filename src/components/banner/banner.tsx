@@ -1,12 +1,20 @@
-import React from 'react';
-import banner from '../../assets/banner.jpg';
+import React from "react";
+import banner from "../../assets/banner-modal.png";
+import { BannerStyle } from "./styles";
 
 export const Banner: React.FC = () => {
-    return (
-        <div className="banner">
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is a showcase of my work and projects.</p>
-            <img src={banner} alt="banner" />
-        </div>
-    );
+  return (
+    <BannerStyle>
+      <div className="banner text-center">
+        <h1 className="big-text text-white whitespace-nowrap">
+          <span>
+            Mahesh Mule — Mahesh Mule — Mahesh Mule — Mahesh Mule — Mahesh Mule
+            — Mahesh Mule — Mahesh Mule — Mahesh Mule — Mahesh Mule — Mahesh
+            Mule — Mahesh Mule — Mahesh Mule — Mahesh Mule
+          </span>
+        </h1>
+        <img src={banner} alt="banner" className="main-img mx-auto" />
+      </div>
+    </BannerStyle>
+  );
 };
