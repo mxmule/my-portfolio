@@ -12,6 +12,7 @@ export const BannerStyle = styled.div`
     0% {
       transform: translateX(0%);
     }
+
     100% {
       transform: translateX(-50%);
     }
@@ -21,20 +22,21 @@ export const BannerStyle = styled.div`
     font-size: 14rem;
     line-height: 1;
     position: absolute;
-    top: 20vh;
+    bottom: 60vh;
     white-space: nowrap;
     overflow: hidden;
   }
 
   .big-text span {
     display: inline-block;
-    animation: bigText 120s infinite linear;
+    animation: bigText 300s infinite linear;
   }
 
   .main-img {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     z-index: 1;
-    max-width: 500px;
+    max-width: 55vh;
   }
 
   @keyframes digitalball {
@@ -50,16 +52,12 @@ export const BannerStyle = styled.div`
   }
 
   .digital-ball {
-    width: clamp(9em, 12vw, 11em);
-    height: clamp(9em, 12vw, 11em);
-    background: var(--color-dark);
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    top: 50;
-    right: 0;
-    transform: translate(-50%, -50%);
-    position: absolute;
     overflow: hidden;
     background: #999d9e;
+    transform: translate(0, 3px);
   }
 
   .digital-ball .overlay {
@@ -198,6 +196,43 @@ export const BannerStyle = styled.div`
   @media screen and (max-width: 1000px) {
     .digital-ball {
       transform: translate(-20%, -50%);
+    }
+  }
+
+  .overlay {
+    left: 0;
+    min-width: 300px;
+    min-height: 150px;
+    padding: 25px 25px 25px 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+
+  .skill {
+    margin-top: -55px;
+  }
+
+  .name-btn {
+    width: 175px;
+
+    .code-by {
+      transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    
+    .name {
+      transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+
+    &:hover {
+      .code-by {
+        transform: translateX(-84px);
+        transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+      }
+      
+      .name {
+        transform: translateX(-84px);
+        transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+      }
     }
   }
 `;
