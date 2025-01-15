@@ -218,7 +218,7 @@ export const BannerStyle = styled.div`
     .code-by {
       transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
     }
-    
+
     .name {
       transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
     }
@@ -228,7 +228,7 @@ export const BannerStyle = styled.div`
         transform: translateX(-84px);
         transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
       }
-      
+
       .name {
         transform: translateX(-84px);
         transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
