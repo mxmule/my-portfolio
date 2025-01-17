@@ -1,21 +1,11 @@
-import React, { useState } from 'react';
-import { Magnetic } from './components/ui/magnetic';
+import React from 'react';
 import { Banner } from './components/banner';
-
 import './styles/App.scss'
 
 const App: React.FC = () => {
     return <div className=''>
         <Banner />
-        {/* <h1 className="text-4xl">Hi this is font test asdfn</h1>
-        <Magnetic>
-            <button
-                type='button'
-                className='inline-flex items-center rounded-md border border-black bg-transparent px-4 py-2 text-lg text-zinc-950 transition-all duration-300 hover:bg-zinc-100 dark:border-zinc-900 dark:bg-transparent dark:text-zinc-50 dark:hover:bg-zinc-600'
-            >
-                <span>Submit</span>
-            </button>
-        </Magnetic> */}
+        
     </div>
 };
 
