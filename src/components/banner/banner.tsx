@@ -7,6 +7,7 @@ import { Magnetic } from "../ui/magnetic";
 
 export const Banner: React.FC = () => {
   const springOptions = { bounce: 0.1 };
+  
   return (
     <BannerStyle>
       <div className="header m-10 text-left flex justify-between items-center">
